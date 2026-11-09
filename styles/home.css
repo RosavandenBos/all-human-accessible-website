@@ -96,9 +96,13 @@
     border-radius: 2rem;
 }
 
-.nav-download:hover {
+.nav-download:hover,
+.nav-download:focus-visible,
+.option-text a:hover,
+.option-text a:focus-visible {
     background-color: var(--COLOR_SECONDARY);
     color: var(--COLOR_WHITE);
+    text-decoration: underline;
 }
 
 
@@ -250,10 +254,6 @@
     border-radius: 2rem;
 }
 
-.option-text a:hover {
-    background-color: var(--COLOR_SECONDARY);
-    color: var(--COLOR_WHITE);
-}
 
 /* ========================================
    DOWNLOADMOGELIJKHEDEN
@@ -337,18 +337,21 @@
     margin-bottom: 0.5rem;
 }
 
-.footer-section a {
-    color: var(--COLOR_WHITE);
-    text-decoration: none;
-}
-
-.footer-section a:hover {
-    color: var(--COLOR_LINK);
-    text-decoration: none;
-}
-
+/* Footer linkjes */
+.footer-section a,
 .footer-section p a {
-    color: var(--COLOR_LINK);
+    color: var(--COLOR_WHITE);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* Hover footer linkjes */
+.footer-section a:hover,
+.footer-section a:focus-visible,
+.footer-section p a:hover,
+.footer-section p a:focus-visible {
+    color: var(--COLOR_LINK_HOVER);
+    text-decoration: underline;
 }
 
 

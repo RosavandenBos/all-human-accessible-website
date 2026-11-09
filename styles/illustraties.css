@@ -140,21 +140,21 @@
     color: var(--COLOR_WHITE);
 }
 
-.button-primary:hover {
-    background-color: var(--COLOR_SECONDARY);
-    color: var(--COLOR_WHITE);
-}
 
 .button-secondary {
     border: 1px solid var(--COLOR_PRIMARY);
     color: var(--COLOR_PRIMARY);
 }
 
-.button-secondary:hover {
-    background-color: var(--COLOR_PRIMARY);
+/* Dezelfde hover voor alle knoppen */
+.nav-download:hover,
+.nav-download:focus-visible,
+.button:hover,
+.button:focus-visible {
+    background-color: var(--COLOR_SECONDARY);
     color: var(--COLOR_WHITE);
+    text-decoration: underline;
 }
-
 
 /* ========================================
    INTRODUCTIE
@@ -287,7 +287,7 @@
 .illustration-card a {
     margin-top: auto;
     color: var(--COLOR_LINK);
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .illustration-card a:hover {
@@ -330,17 +330,21 @@
     margin-bottom: 0.5rem;
 }
 
-.footer-section a {
+/* Footer linkjes */
+.footer-section a,
+.footer-section p a {
     color: var(--COLOR_WHITE);
+    font-weight: normal;
     text-decoration: none;
 }
 
-.footer-section a:hover {
-    color: var(--COLOR_LINK);
-}
-
-.footer-section p a {
-    color: var(--COLOR_LINK);
+/* Hover footer linkjes */
+.footer-section a:hover,
+.footer-section a:focus-visible,
+.footer-section p a:hover,
+.footer-section p a:focus-visible {
+    color: var(--COLOR_LINK_HOVER);
+    text-decoration: underline;
 }
 
 
